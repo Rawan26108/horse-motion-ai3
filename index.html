@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Motion AI</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #101827, #243b53);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #cbd5e1;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #ffffff;
+            color: #172033;
+            padding: 35px 25px;
+            border-radius: 16px;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #174a70;
+        }
+
+        .card p {
+            color: #526174;
+            line-height: 1.6;
+        }
+
+        .open-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #174a70;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #aebdce;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Horse Motion AI</h1>
+        <p class="subtitle">
+            Horse Movement Data Collection and Recognition System
+        </p>
+
+        <div class="cards">
+            <a class="card" href="./data_collection_stage1/index.html">
+                <h2>Stage 1</h2>
+                <p>Collect and record horse movement sensor data.</p>
+                <span class="open-btn">Open Data Collection</span>
+            </a>
+
+            <a class="card" href="./recognition_stage2/index1.html">
+                <h2>Stage 2</h2>
+                <p>Start a recognition session and monitor horse movement.</p>
+                <span class="open-btn">Open Recognition</span>
+            </a>
+        </div>
+
+        <footer>
+            Horse Motion AI Project
+        </footer>
+    </main>
+</body>
+</html>
